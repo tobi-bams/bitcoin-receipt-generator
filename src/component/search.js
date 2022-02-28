@@ -24,7 +24,7 @@ const Search = () => {
         });
         setTimeout(() => {
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.open(fileURL, "_blank");
         }, 1000);
       } catch (error) {
         const reader = new FileReader();
