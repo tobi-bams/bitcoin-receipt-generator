@@ -8,7 +8,7 @@ const Search = () => {
     if (txid) {
       try {
         const response = await axios.get(
-          `http://localhost:5000/getReceipt?txid=${txid}`,
+          `https://quiet-meadow-38248.herokuapp.com/getReceipt?txid=${txid}`,
           {
             responseType: "blob",
           }
